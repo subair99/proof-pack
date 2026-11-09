@@ -1,0 +1,5 @@
+_private/
+*.pdf
+*.docx
+*.zip
+.DS_Store
