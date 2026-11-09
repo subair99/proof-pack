@@ -7,7 +7,7 @@ Back to [SKILL.md](../SKILL.md).
 One numbered line per item, oldest first. Times use the NAS time zone and are shown as `YYYY-MM-DD HH:MM`.
 
 ```
-T1  2026-11-03 22:41  CAMERA  Driveway: motion, vehicle, 22:41 to 22:43   [event: Driveway 22:41]
+T1  2026-11-03 22:41  CAMERA  Driveway: Vehicle, 22:41 to 22:43           [event: Driveway 22:41]
 T2  2026-11-04 07:58  PHOTO   Rear bumper, close-up                        [/Photos/2026/11/IMG_1182.jpg]
 T3  2026-11-04 08:00  PHOTO   Rear bumper, wide                            [/Photos/2026/11/IMG_1183.jpg]
 T4  2026-11-05 11:20  DOC     Repair quote, 185,000 (Sample Motors)        [/Documents/Car/quote-v1.pdf]
@@ -16,7 +16,7 @@ T5  2026-11-07 09:05  DOC     Revised repair quote, 210,000 (Sample Motors) [/Do
                                                                            [/Documents/Car/policy-schedule.pdf]
 ```
 
-Items without a date (for example a policy document) are listed after the dated items. Undated photos are listed separately and never placed on the timeline.
+Items without a date (for example a policy document) are listed after the dated items. Undated photos, which are looked for only in a folder the user names, are listed separately and never placed on the timeline.
 
 ## Evidence check
 
@@ -48,9 +48,10 @@ CHECKS
 
 ```
 These photos show people you didn't list. Keep or leave out each one?
-- IMG_1190.jpg: 1 unrecognized person
-- IMG_1191.jpg: "Tunde" (recognized person)
+- IMG_1190.jpg: 1 unnamed person
+- IMG_1191.jpg: "Tunde" (named person)
 Leaving a photo out only removes it from the pack. The original stays where it is.
+I can only spot people your NAS has already grouped. Please look through the photos before sharing.
 ```
 
 ## Summary note
@@ -59,7 +60,7 @@ Leaving a photo out only removes it from the pack. The original stays where it i
 <case name> - summary
 
 What the evidence shows
-A vehicle motion event was recorded on the Driveway camera at 22:41 on 3 November [T1].
+A vehicle event was recorded on the Driveway camera at 22:41 on 3 November [T1].
 Photos of rear bumper damage were taken the next morning at 07:58 and 08:00 [T2, T3].
 Sample Motors quoted 185,000 on 5 November and revised it to 210,000 on 7 November [T4, T5].
 The incident date is inside the policy cover period [policy-schedule.pdf].
@@ -76,9 +77,9 @@ This pack organizes your own files. It is not legal or insurance advice.
 ## Confirmation message (Step 8)
 
 ```
-Here is what I will create. Nothing will be moved or deleted.
+Here is what I will create. Nothing will be moved or deleted. (The folder shown is an example; use the real path from Step 8.)
 
-Folder:  /Proof Pack/vehicle-damage-2026-11-03/
+Folder:  /Personal/Proof Pack/vehicle-damage-2026-11-03/
 Copy in: 5 files (2 photos, 3 documents)
 Album:   "Proof Pack: vehicle-damage-2026-11-03" (2 photos; 1 left out at your request)
 Note:    "vehicle-damage-2026-11-03 - summary"
@@ -90,7 +91,7 @@ Remove anything first, or say "yes" to create the pack.
 
 ```
 Pack created.
-- Folder: /Proof Pack/vehicle-damage-2026-11-03/ (5 files copied)
+- Folder: /Personal/Proof Pack/vehicle-damage-2026-11-03/ (5 files copied)
 - Album: "Proof Pack: vehicle-damage-2026-11-03" (2 photos, 1 left out)
 - Note: "vehicle-damage-2026-11-03 - summary"
 

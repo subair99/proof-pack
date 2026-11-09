@@ -12,7 +12,7 @@ Back to [SKILL.md](../SKILL.md).
 
 ## Core test 1: vehicle damage, full pack
 
-- **Setup**: camera "Driveway" with a motion event at 22:41 on the test day; 3 photos the next morning, one of which shows a second team member; the policy schedule and both quote versions in `/Documents/Car/`.
+- **Setup**: camera "Driveway" with a Vehicle event at 22:41 on the test day; 3 photos the next morning, one of which shows a second team member whom the NAS has already grouped as a person; the policy schedule and both quote versions in `/Documents/Car/`.
 - **Say**: "Build a claim pack for the scratch on my car last night."
 - **Expected**:
   - The camera event, photos and documents appear on the timeline in time order, numbered T1 onwards.
@@ -29,8 +29,8 @@ Back to [SKILL.md](../SKILL.md).
 
 ## Edge case: conflict, foreign-language receipt and a refusal
 
-- **Setup**: a delivery claim; the courier notice says "delivered 14:32" but the Front Door camera has no events from 14:00 to 15:00; the only receipt is in French; 3 undated photos.
-- **Say**: "My parcel never arrived on the 10th. Pull together what I have."
+- **Setup**: a delivery claim; the courier notice says "delivered 14:32" but the Front Door camera has no events from 14:00 to 15:00; the only receipt is in French; 3 undated photos in `/Photos/Parcel/`.
+- **Say**: "My parcel never arrived on the 10th. Pull together what I have. The photos are in the Parcel folder."
 - **Expected**:
   - The delivery item is Conflict, with both facts shown and no verdict wording.
   - The camera window is not widened without being asked.
@@ -41,8 +41,18 @@ Back to [SKILL.md](../SKILL.md).
 ## Extra checks if time allows
 
 - Two different insurance policies: the Skill asks the user to choose.
-- An existing case folder: the Skill asks before updating.
-- "Update my Proof Pack": only Conflict, Missing, Weak and Single source items are re-checked.
+- An existing case folder: the Skill asks at Step 8, before writing anything.
+- "Update my Proof Pack": only Conflict, Missing, Weak and Single source items are re-checked, and a new album and note are created while the earlier ones stay as they were.
+- More than 200 camera events in a window: the Skill warns that results may be cut off.
+
+## Points to confirm on the NAS
+
+The capability catalog does not document these, so check them during the first run:
+
+- whether the photo expert can list undated photos in a named folder
+- whether photo searches return a file path as well as a photo ID, which the copy in Step 9 needs
+- whether unnamed person groups are returned and matched in Step 7
+- whether `translate` asks for approval when it only returns text
 
 ## Demo recording plan (Round 2, under 3 minutes)
 
